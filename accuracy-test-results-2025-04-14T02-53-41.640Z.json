@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-04-14T02:53:41.641Z",
+  "overallAccuracy": 0,
+  "testCount": 3,
+  "successfulTests": 0,
+  "testResults": [
+    {
+      "imagePath": "./attached_assets/image_1742679077264.png",
+      "description": "Breakfast plate with eggs",
+      "success": false,
+      "error": "Recognition failed"
+    },
+    {
+      "imagePath": "./attached_assets/image_1742679051135.png",
+      "description": "Fresh produce",
+      "success": false,
+      "error": "Recognition failed"
+    },
+    {
+      "imagePath": "./attached_assets/image_1742679090253.png",
+      "description": "Meat dish",
+      "success": false,
+      "error": "Recognition failed"
+    }
+  ]
+}

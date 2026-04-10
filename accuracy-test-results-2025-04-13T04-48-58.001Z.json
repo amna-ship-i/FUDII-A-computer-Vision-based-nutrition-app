@@ -1,0 +1,270 @@
+{
+  "timestamp": "2025-04-13T04:48:58.002Z",
+  "overallAccuracy": 0,
+  "testCount": 3,
+  "successfulTests": 3,
+  "testResults": [
+    {
+      "imagePath": "./attached_assets/image_1742679077264.png",
+      "description": "Breakfast plate with eggs",
+      "success": true,
+      "detectedItems": [
+        {
+          "name": "Orange",
+          "calories": 85,
+          "protein": 2,
+          "carbs": 21,
+          "fat": 7,
+          "fiber": 4,
+          "sugar": 17,
+          "nutritionScore": 50,
+          "portion": "1 medium",
+          "confidence": 0.9104088,
+          "category": "fruit"
+        }
+      ],
+      "expectedItems": [
+        "egg",
+        "breakfast",
+        "plate",
+        "food"
+      ],
+      "expectedLabels": [
+        "egg",
+        "protein",
+        "breakfast food",
+        "cooked"
+      ],
+      "matchResults": {
+        "matches": [],
+        "matchedCount": 0,
+        "expectedCount": 4,
+        "unmatchedExpected": [
+          "egg",
+          "breakfast",
+          "plate",
+          "food"
+        ],
+        "unmatchedDetected": [
+          "Orange"
+        ]
+      },
+      "accuracyMetrics": {
+        "recall": 0,
+        "precision": 0,
+        "f1Score": 0,
+        "avgSimilarity": 0,
+        "matchRate": 0
+      },
+      "nutritionData": {
+        "nutritionalQuality": 10,
+        "healthScore": 100,
+        "processingLevel": "minimally_processed",
+        "keyNutrients": [
+          {
+            "name": "Protein",
+            "amount": "2g",
+            "percentOfDailyValue": 4
+          },
+          {
+            "name": "Fiber",
+            "amount": "4g",
+            "percentOfDailyValue": 16
+          }
+        ],
+        "recommendations": [
+          "This is a well-balanced, nutritious meal!",
+          "Good job choosing healthy options."
+        ]
+      },
+      "totalCalories": 85
+    },
+    {
+      "imagePath": "./attached_assets/image_1742679051135.png",
+      "description": "Fresh produce",
+      "success": true,
+      "detectedItems": [
+        {
+          "name": "Food group",
+          "calories": 145,
+          "protein": 1,
+          "carbs": 16,
+          "fat": 8,
+          "fiber": 3,
+          "sugar": 3,
+          "nutritionScore": 50,
+          "portion": "standard serving",
+          "confidence": 0.6273209,
+          "category": "other"
+        },
+        {
+          "name": "Food",
+          "calories": 200,
+          "protein": 5,
+          "carbs": 15,
+          "fat": 7,
+          "fiber": null,
+          "sugar": null,
+          "nutritionScore": 50,
+          "portion": "standard serving",
+          "confidence": 0.6261321,
+          "category": "other"
+        },
+        {
+          "name": "Natural foods",
+          "calories": 200,
+          "protein": 5,
+          "carbs": 15,
+          "fat": 7,
+          "fiber": null,
+          "sugar": null,
+          "nutritionScore": 50,
+          "portion": "standard serving",
+          "confidence": 0.58375967,
+          "category": "other"
+        },
+        {
+          "name": "Superfood",
+          "calories": 100,
+          "protein": 5,
+          "carbs": 15,
+          "fat": 11,
+          "fiber": null,
+          "sugar": null,
+          "nutritionScore": 50,
+          "portion": "standard serving",
+          "confidence": 0.5080534,
+          "category": "other"
+        }
+      ],
+      "expectedItems": [
+        "vegetable",
+        "fruit",
+        "produce",
+        "healthy"
+      ],
+      "expectedLabels": [
+        "fresh",
+        "healthy",
+        "natural",
+        "raw"
+      ],
+      "matchResults": {
+        "matches": [],
+        "matchedCount": 0,
+        "expectedCount": 4,
+        "unmatchedExpected": [
+          "vegetable",
+          "fruit",
+          "produce",
+          "healthy"
+        ],
+        "unmatchedDetected": [
+          "Food group",
+          "Food",
+          "Natural foods",
+          "Superfood"
+        ]
+      },
+      "accuracyMetrics": {
+        "recall": 0,
+        "precision": 0,
+        "f1Score": 0,
+        "avgSimilarity": 0,
+        "matchRate": 0
+      },
+      "nutritionData": {
+        "nutritionalQuality": 10,
+        "healthScore": 100,
+        "processingLevel": "minimally_processed",
+        "keyNutrients": [
+          {
+            "name": "Protein",
+            "amount": "16g",
+            "percentOfDailyValue": 32
+          },
+          {
+            "name": "Fiber",
+            "amount": "3g",
+            "percentOfDailyValue": 12
+          }
+        ],
+        "recommendations": [
+          "This is a well-balanced, nutritious meal!",
+          "Good job choosing healthy options."
+        ]
+      },
+      "totalCalories": 645
+    },
+    {
+      "imagePath": "./attached_assets/image_1742679090253.png",
+      "description": "Meat dish",
+      "success": true,
+      "detectedItems": [
+        {
+          "name": "Food",
+          "calories": 200,
+          "protein": 5,
+          "carbs": 15,
+          "fat": 7,
+          "fiber": null,
+          "sugar": null,
+          "nutritionScore": 50,
+          "portion": "standard serving",
+          "confidence": 0.7304057,
+          "category": "other"
+        }
+      ],
+      "expectedItems": [
+        "meat",
+        "protein",
+        "dinner",
+        "meal"
+      ],
+      "expectedLabels": [
+        "cooked",
+        "prepared",
+        "dinner",
+        "main course"
+      ],
+      "matchResults": {
+        "matches": [],
+        "matchedCount": 0,
+        "expectedCount": 4,
+        "unmatchedExpected": [
+          "meat",
+          "protein",
+          "dinner",
+          "meal"
+        ],
+        "unmatchedDetected": [
+          "Food"
+        ]
+      },
+      "accuracyMetrics": {
+        "recall": 0,
+        "precision": 0,
+        "f1Score": 0,
+        "avgSimilarity": 0,
+        "matchRate": 0
+      },
+      "nutritionData": {
+        "nutritionalQuality": 10,
+        "healthScore": 100,
+        "processingLevel": "minimally_processed",
+        "keyNutrients": [
+          {
+            "name": "Protein",
+            "amount": "5g",
+            "percentOfDailyValue": 10
+          }
+        ],
+        "recommendations": [
+          "This is a well-balanced, nutritious meal!",
+          "Good job choosing healthy options."
+        ]
+      },
+      "totalCalories": 200
+    }
+  ]
+}

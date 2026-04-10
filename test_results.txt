@@ -1,0 +1,222 @@
+======= MULTI-SCENARIO FOOD RECOGNITION TEST SUITE =======
+
+Starting test run with 4 scenarios
+
+===== Testing Scenario: Breakfast Plate =====
+Description: Tests identification of breakfast plates often confused with oranges/fruits
+Image loaded (4460288 characters)
+Expected items: breakfast plate, egg
+Sending request to API...
+Response received in 0.11 seconds
+
+Detected 12 items:
+1. Food (99.0%)
+   Category: other
+   Meal Type: breakfast
+2. Salad (99.0%)
+   Category: vegetables
+   Meal Type: lunch
+3. Egg breakfast plate (99.0%)
+   Category: proteins
+   Meal Type: breakfast
+4. Egg (99.0%)
+   Category: proteins
+   Meal Type: breakfast
+5. Fruit (89.7%)
+   Category: fruits
+   Meal Type: snack
+6. Lunch (83.0%)
+   Category: prepared
+   Meal Type: lunch
+7. Salad (77.2%)
+   Category: vegetables
+   Meal Type: lunch
+8. Staple food (77.1%)
+   Category: grains
+   Meal Type: breakfast
+9. Superfood (73.1%)
+   Category: prepared
+   Meal Type: breakfast
+10. Side dish (73.1%)
+   Category: prepared
+   Meal Type: dinner
+11. Natural foods (69.2%)
+   Category: prepared
+   Meal Type: breakfast
+12. Japanese Cuisine (67.5%)
+   Category: prepared
+   Meal Type: breakfast
+
+Matched Items: 2/2
+✅ Expected "breakfast plate" -> Found "egg breakfast plate" (99.0%)
+✅ Expected "egg" -> Found "egg" (99.0%)
+
+Test Result: ✅ PASS
+
+===== Testing Scenario: Standard Food Image =====
+Description: Tests standard food recognition against a known food image
+Image loaded (4460288 characters)
+Expected items: food
+Sending request to API...
+Response received in 0.09 seconds
+
+Detected 12 items:
+1. Food (99.0%)
+   Category: other
+   Meal Type: breakfast
+2. Salad (99.0%)
+   Category: vegetables
+   Meal Type: lunch
+3. Egg breakfast plate (99.0%)
+   Category: proteins
+   Meal Type: breakfast
+4. Egg (99.0%)
+   Category: proteins
+   Meal Type: breakfast
+5. Fruit (89.7%)
+   Category: fruits
+   Meal Type: snack
+6. Lunch (83.0%)
+   Category: prepared
+   Meal Type: lunch
+7. Salad (77.2%)
+   Category: vegetables
+   Meal Type: lunch
+8. Staple food (77.1%)
+   Category: grains
+   Meal Type: breakfast
+9. Superfood (73.1%)
+   Category: prepared
+   Meal Type: breakfast
+10. Side dish (73.1%)
+   Category: prepared
+   Meal Type: dinner
+11. Natural foods (69.2%)
+   Category: prepared
+   Meal Type: breakfast
+12. Japanese Cuisine (67.5%)
+   Category: prepared
+   Meal Type: breakfast
+
+Matched Items: 1/1
+✅ Expected "food" -> Found "food" (99.0%)
+
+Test Result: ✅ PASS
+
+===== Testing Scenario: Breakfast Plate with Contextual Analysis =====
+Description: Tests the contextual food categorization with meal type detection
+Image loaded (4460288 characters)
+Expected items: breakfast, egg, food
+Using meal context: breakfast
+Using time of day: morning
+Sending request to API...
+Response received in 0.07 seconds
+
+Detected 12 items:
+1. Food (99.0%)
+   Category: other
+   Meal Type: breakfast
+2. Salad (99.0%)
+   Category: vegetables
+   Meal Type: lunch
+3. Egg breakfast plate (99.0%)
+   Category: proteins
+   Meal Type: breakfast
+4. Egg (99.0%)
+   Category: proteins
+   Meal Type: breakfast
+5. Fruit (89.7%)
+   Category: fruits
+   Meal Type: snack
+6. Lunch (83.0%)
+   Category: prepared
+   Meal Type: lunch
+7. Salad (77.2%)
+   Category: vegetables
+   Meal Type: lunch
+8. Staple food (77.1%)
+   Category: grains
+   Meal Type: breakfast
+9. Superfood (73.1%)
+   Category: prepared
+   Meal Type: breakfast
+10. Side dish (73.1%)
+   Category: prepared
+   Meal Type: dinner
+11. Natural foods (69.2%)
+   Category: prepared
+   Meal Type: breakfast
+12. Japanese Cuisine (67.5%)
+   Category: prepared
+   Meal Type: breakfast
+
+Matched Items: 3/3
+✅ Expected "food" -> Found "food" (99.0%)
+✅ Expected "breakfast" -> Found "egg breakfast plate" (99.0%)
+✅ Expected "egg" -> Found "egg" (99.0%)
+
+Validating meal context detection:
+Expected meal context 'breakfast': ✅ Detected
+
+Test Result: ✅ PASS
+
+===== Testing Scenario: Portion Size Estimation =====
+Description: Tests if portion size estimation is working correctly
+Image loaded (4460288 characters)
+Expected items: food
+Validating portion sizes
+Sending request to API...
+Response received in 0.09 seconds
+
+Detected 12 items:
+1. Food (99.0%)
+   Category: other
+   Meal Type: breakfast
+2. Salad (99.0%)
+   Category: vegetables
+   Meal Type: lunch
+3. Egg breakfast plate (99.0%)
+   Category: proteins
+   Meal Type: breakfast
+4. Egg (99.0%)
+   Category: proteins
+   Meal Type: breakfast
+5. Fruit (89.7%)
+   Category: fruits
+   Meal Type: snack
+6. Lunch (83.0%)
+   Category: prepared
+   Meal Type: lunch
+7. Salad (77.2%)
+   Category: vegetables
+   Meal Type: lunch
+8. Staple food (77.1%)
+   Category: grains
+   Meal Type: breakfast
+9. Superfood (73.1%)
+   Category: prepared
+   Meal Type: breakfast
+10. Side dish (73.1%)
+   Category: prepared
+   Meal Type: dinner
+11. Natural foods (69.2%)
+   Category: prepared
+   Meal Type: breakfast
+12. Japanese Cuisine (67.5%)
+   Category: prepared
+   Meal Type: breakfast
+
+Matched Items: 1/1
+✅ Expected "food" -> Found "food" (99.0%)
+
+Validating portion sizes:
+Portion size information: ❌ Missing
+❌ FAILED: Portion size validation required but not found in results
+
+======= TEST SUMMARY =======
+Tests passed: 3/4 (75.0%)
+
+Failed tests:
+❌ Portion Size Estimation
+
+======= TEST SUITE COMPLETE =======

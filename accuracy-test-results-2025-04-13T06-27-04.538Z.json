@@ -1,0 +1,179 @@
+{
+  "timestamp": "2025-04-13T06:27:04.538Z",
+  "overallAccuracy": 0,
+  "testCount": 3,
+  "successfulTests": 3,
+  "testResults": [
+    {
+      "imagePath": "./attached_assets/image_1742679077264.png",
+      "description": "Breakfast plate with eggs",
+      "success": true,
+      "detectedItems": [
+        {
+          "name": "Orange",
+          "confidence": 0.99,
+          "category": "fruits",
+          "source": "google_vision_service",
+          "mealType": "breakfast"
+        }
+      ],
+      "expectedItems": [
+        "egg",
+        "breakfast",
+        "plate",
+        "food"
+      ],
+      "expectedLabels": [
+        "egg",
+        "protein",
+        "breakfast food",
+        "cooked"
+      ],
+      "matchResults": {
+        "matches": [],
+        "matchedCount": 0,
+        "expectedCount": 4,
+        "unmatchedExpected": [
+          "egg",
+          "breakfast",
+          "plate",
+          "food"
+        ],
+        "unmatchedDetected": [
+          "Orange"
+        ]
+      },
+      "accuracyMetrics": {
+        "recall": 0,
+        "precision": 0,
+        "f1Score": 0,
+        "avgSimilarity": 0,
+        "matchRate": 0
+      },
+      "nutritionData": null,
+      "totalCalories": 75
+    },
+    {
+      "imagePath": "./attached_assets/image_1742679051135.png",
+      "description": "Fresh produce",
+      "success": true,
+      "detectedItems": [
+        {
+          "name": "Natural foods",
+          "confidence": 0.7317596700000001,
+          "category": "prepared",
+          "source": "google_vision_service",
+          "mealType": "breakfast"
+        },
+        {
+          "name": "Food group",
+          "confidence": 0.7153209,
+          "category": "prepared",
+          "source": "google_vision_service",
+          "mealType": "breakfast"
+        },
+        {
+          "name": "Food",
+          "confidence": 0.7141321,
+          "category": "prepared",
+          "source": "google_vision_service",
+          "mealType": "breakfast"
+        },
+        {
+          "name": "Superfood",
+          "confidence": 0.6560534000000001,
+          "category": "prepared",
+          "source": "google_vision_service",
+          "mealType": "breakfast"
+        }
+      ],
+      "expectedItems": [
+        "vegetable",
+        "fruit",
+        "produce",
+        "healthy"
+      ],
+      "expectedLabels": [
+        "fresh",
+        "healthy",
+        "natural",
+        "raw"
+      ],
+      "matchResults": {
+        "matches": [],
+        "matchedCount": 0,
+        "expectedCount": 4,
+        "unmatchedExpected": [
+          "vegetable",
+          "fruit",
+          "produce",
+          "healthy"
+        ],
+        "unmatchedDetected": [
+          "Natural foods",
+          "Food group",
+          "Food",
+          "Superfood"
+        ]
+      },
+      "accuracyMetrics": {
+        "recall": 0,
+        "precision": 0,
+        "f1Score": 0,
+        "avgSimilarity": 0,
+        "matchRate": 0
+      },
+      "nutritionData": null,
+      "totalCalories": 540
+    },
+    {
+      "imagePath": "./attached_assets/image_1742679090253.png",
+      "description": "Meat dish",
+      "success": true,
+      "detectedItems": [
+        {
+          "name": "Food",
+          "confidence": 0.7784057000000001,
+          "category": "other",
+          "source": "google_vision_service",
+          "mealType": "breakfast"
+        }
+      ],
+      "expectedItems": [
+        "meat",
+        "protein",
+        "dinner",
+        "meal"
+      ],
+      "expectedLabels": [
+        "cooked",
+        "prepared",
+        "dinner",
+        "main course"
+      ],
+      "matchResults": {
+        "matches": [],
+        "matchedCount": 0,
+        "expectedCount": 4,
+        "unmatchedExpected": [
+          "meat",
+          "protein",
+          "dinner",
+          "meal"
+        ],
+        "unmatchedDetected": [
+          "Food"
+        ]
+      },
+      "accuracyMetrics": {
+        "recall": 0,
+        "precision": 0,
+        "f1Score": 0,
+        "avgSimilarity": 0,
+        "matchRate": 0
+      },
+      "nutritionData": null,
+      "totalCalories": 80
+    }
+  ]
+}

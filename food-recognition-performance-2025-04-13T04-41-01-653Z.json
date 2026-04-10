@@ -1,0 +1,85 @@
+{
+  "timestamp": "2025-04-13T04:41:01.653Z",
+  "apiConnectivity": {
+    "googleVision": {
+      "status": "connected",
+      "success": true,
+      "responseTime": 1496.462817,
+      "data": {
+        "labels": 10,
+        "objects": 2
+      }
+    },
+    "edamam": {
+      "status": "connected",
+      "success": true,
+      "responseTime": 371.7096550000001,
+      "data": {
+        "foodMatches": 20,
+        "queryTime": null
+      }
+    }
+  },
+  "recognition": {
+    "totalTests": 6,
+    "successfulTests": 6,
+    "averageResponseTime": 471.1988613333333,
+    "averageAccuracy": 0.25,
+    "averageRequestSize": 2614149,
+    "averageResponseSize": 1741.5
+  },
+  "batchProcessing": {
+    "batchSizes": [
+      1,
+      2,
+      5
+    ],
+    "successRates": [
+      0,
+      0,
+      0
+    ],
+    "processingTimes": [
+      31.764656999999715,
+      80.98047200000019,
+      72.84082399999988
+    ],
+    "throughputRates": [
+      0,
+      0,
+      0
+    ]
+  },
+  "mlModel": {
+    "success": false,
+    "error": "Request failed with status code 401",
+    "errorDetails": {
+      "error": "Authentication required"
+    }
+  },
+  "performance": {
+    "responseTime": {
+      "value": 471,
+      "unit": "ms",
+      "target": 5000,
+      "status": "pass"
+    },
+    "accuracy": {
+      "value": "25.0",
+      "unit": "%",
+      "target": "70.0",
+      "status": "fail"
+    },
+    "successRate": {
+      "value": "100.0",
+      "unit": "%",
+      "target": "95.0",
+      "status": "pass"
+    }
+  },
+  "scaling": {
+    "maxThroughput": "0.00",
+    "scalingFactor": "N/A"
+  },
+  "recommendations": []
+}
